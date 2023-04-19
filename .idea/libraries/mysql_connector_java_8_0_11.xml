@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/D24_Hostel_Management_Sys/src/lk/ijse/D24_Hostel/lib/mysql-connector-java-8.0.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

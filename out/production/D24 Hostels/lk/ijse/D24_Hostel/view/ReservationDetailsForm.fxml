@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1993.0" style="-fx-background-color: #545559;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24_Hostel.controller.ReservationDetailsFormController">
+   <children>
+      <Label layoutX="669.0" layoutY="46.0" text="Reservation Details" textFill="#07fad6" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="54.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="62.0" layoutX="1653.0" layoutY="62.0" onMouseClicked="#imgSettingOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/icons8-settings-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="123.0" layoutY="66.0" prefHeight="39.0" prefWidth="101.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblReservationDetails" layoutX="312.0" layoutY="359.0" prefHeight="554.0" prefWidth="1206.0">
+        <columns>
+            <TableColumn fx:id="colDate" prefWidth="128.0" text="Date" />
+          <TableColumn fx:id="colRes_Id" prefWidth="161.99996948242188" text="Reservation ID" />
+            <TableColumn fx:id="colRoomId" prefWidth="184.0" text="Room ID" />
+          <TableColumn fx:id="colStudentId" prefWidth="124.0" text="Student ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="269.0" text="Student Name" />
+            <TableColumn fx:id="colRoomType" prefWidth="161.0" text="Room Type" />
+            <TableColumn fx:id="colStatus" prefWidth="177.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

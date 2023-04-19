@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1000.0" prefWidth="1993.0" style="-fx-background-color: #545559;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24_Hostel.controller.StudentFormController">
+   <children>
+      <JFXButton layoutX="97.0" layoutY="913.0" onAction="#btnAddStudentOnAction" prefHeight="42.0" prefWidth="121.0" styleClass="addButton" stylesheets="@../style/Style.css" text="Add student">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <Label layoutX="705.0" layoutY="25.0" text="Student Management" textFill="#00a4fc">
+         <font>
+            <Font name="System Bold Italic" size="57.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="275.0" layoutY="819.0" onAction="#btnUpdateStudentOnAction" prefHeight="42.0" prefWidth="121.0" styleClass="addButton" stylesheets="@../style/Style.css" text="Update student">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="275.0" layoutY="913.0" onAction="#btnDeleteStudentOnAction" prefHeight="42.0" prefWidth="121.0" styleClass="deleteButton" stylesheets="@../style/Style.css" text="Delete student">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="97.0" layoutY="819.0" onAction="#btnSearchStudentOnAction" prefHeight="42.0" prefWidth="121.0" styleClass="addButton" stylesheets="@../style/Style.css" text="Search student">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="687.0" layoutY="684.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="121.0" styleClass="clearButton" stylesheets="@../style/Style.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="1797.0" layoutY="44.0" onMouseClicked="#imgSettingOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/icons8-settings-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="115.0" layoutY="23.0" prefHeight="31.0" prefWidth="173.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStudent" layoutX="909.0" layoutY="219.0" prefHeight="468.0" prefWidth="920.0">
+         <columns>
+            <TableColumn fx:id="colStudentId" prefWidth="86.33331298828125" text="Student ID" />
+            <TableColumn fx:id="colName" prefWidth="145.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="142.66668701171875" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="125.66668701171875" text="Contact No" />
+            <TableColumn fx:id="colDob" prefWidth="148.0" text="Date of Birth" />
+            <TableColumn fx:id="colGender" prefWidth="102.0" text="Gender" />
+            <TableColumn prefWidth="273.0" text="Type" />
+         </columns>
+      </TableView>
+      <Label layoutX="101.0" layoutY="212.0" text="Student ID    : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="294.0" text="Name            :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="373.0" text="Address         :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="451.0" text="Contact No   : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="545.0" text="Birthday       :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="642.0" text="Gender         : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtStudentID" focusColor="#8d7b68" layoutX="335.0" layoutY="219.0" onAction="#txtStudentIDOnAction" prefHeight="31.0" prefWidth="227.0" />
+      <JFXTextField fx:id="txtName" focusColor="#8d7b68" layoutX="335.0" layoutY="301.0" prefHeight="31.0" prefWidth="227.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#8d7b68" layoutX="335.0" layoutY="380.0" prefHeight="31.0" prefWidth="227.0" />
+      <JFXTextField fx:id="txtContact" focusColor="#8d7b68" layoutX="335.0" layoutY="458.0" prefHeight="31.0" prefWidth="227.0" />
+      <JFXDatePicker fx:id="dtpckDob" defaultColor="#8d7b68" layoutX="335.0" layoutY="552.0" prefHeight="31.0" prefWidth="227.0" />
+      <JFXRadioButton layoutX="335.0" layoutY="647.0" selected="true" text="Male" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="449.0" layoutY="646.0" text="Female" textFill="WHITE" toggleGroup="$genderGroup">
+         <font>
+            <Font size="26.0" />
+         </font></JFXRadioButton>
+   </children>
+</AnchorPane>

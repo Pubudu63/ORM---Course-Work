@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="IMAGE_VIEW" prefHeight="511.0" prefWidth="888.0" style="-fx-background-color: #545559;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24_Hostel.controller.SignUpFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="454.0" layoutY="251.0" prefHeight="31.0" prefWidth="234.0" promptText="           User name" styleClass="text" stylesheets="@../style/Style.css" />
+      <Label layoutX="270.0" layoutY="43.0" text="Welcome to D24 Hostels" textFill="#74da5a">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="710.0" layoutY="429.0" onAction="#btnSignUp" prefHeight="31.0" prefWidth="110.0" styleClass="loginButton" stylesheets="@../style/Style.css" text="Register">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="454.0" layoutY="332.0" prefHeight="31.0" prefWidth="234.0" promptText="            Password" styleClass="text" stylesheets="@../style/Style.css" />
+      <ImageView fitHeight="110.0" fitWidth="116.0" layoutX="27.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/L1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="187.0" layoutY="245.0" prefHeight="43.0" prefWidth="226.0" text="User Name  :-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="326.0" text="Password  :-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

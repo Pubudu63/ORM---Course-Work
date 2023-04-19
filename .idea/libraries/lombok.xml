@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lombok">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/D24_Hostel_Management_Sys/src/lk/ijse/D24_Hostel/lib/lombok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

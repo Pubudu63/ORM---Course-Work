@@ -1,0 +1,53 @@
+.text {
+    -fx-background-radius: 30px;
+}
+
+.loginButton {
+    -fx-background-radius: 30px;
+    -fx-background-color: #5fa4ea;
+}
+
+.addButton {
+    -fx-background-color: #FFCF49;
+    -fx-background-radius: 30px;
+}
+
+.addButton:hover {
+    -fx-background-color: #008624;
+    -fx-background-radius: 30px;
+}
+
+.deleteButton {
+    -fx-background-color: #f35959;
+    -fx-background-radius: 30px;
+}
+
+.deleteButton:hover {
+    -fx-background-color: #d20404;
+    -fx-background-radius: 30px;
+}
+
+.clearButton {
+    -fx-background-color: #04C0CD;
+    -fx-background-radius: 30px;
+}
+
+.sideBarButton {
+    -fx-background-color: #04C0CD;
+    -fx-background-radius: 15px;
+}
+
+.sideBarButton:hover {
+    -fx-background-color: #675D50;
+    -fx-background-radius: 15px;
+}
+
+.RegisterButton {
+    -fx-background-color: #25B1FF;
+    -fx-background-radius: 15px;
+}
+
+.RegisterButton:hover {
+    -fx-background-color: #E21818;
+    -fx-background-radius: 15px;
+}
